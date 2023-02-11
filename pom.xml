@@ -19,14 +19,18 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
+    <!--properties for sonarQube analysis -->
+  <sonar.host.url>http://3.83.13.67:9000</sonar.host.url>
+  <sonar.projectKey>Simple-Java-Maven-App</sonar.projectKey>
+  <sonar.login>sqp_efebd2da14dfc8746a3135f6e9b775f04d358d82</sonar.login>
   </properties>
   <build>
     <pluginManagement>
       <plugins>
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.1</version>
+          <groupId>org.sonarsource.scanner.maven</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>3.7.0.1746</version>
         </plugin>
       </plugins>
     </pluginManagement>
