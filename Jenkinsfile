@@ -33,5 +33,9 @@ pipeline {
       }
     }
 
+    stage('Build image') {
+       dockerImage = docker.build("tsdevopsacp/sjma:2.0")
+    }
+
   }
 }
