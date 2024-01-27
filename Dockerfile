@@ -1,6 +1,6 @@
 # Install base image
 FROM ubuntu:latest
-# Install PHP and php-mysql
+# Install Java
 RUN apt update && apt install -y openjdk-17-jdk
 # Copy jar file for deploymnet
 COPY ./target/*.jar .
