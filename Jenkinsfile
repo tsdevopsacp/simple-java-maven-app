@@ -16,7 +16,7 @@ pipeline {
     
     stage('Static Analysis') {
       steps {
-        sh 'mvn sonar:sonar \\
+        sh 'mvn sonar:sonar \
   -Dsonar.projectKey=Simple-Java-Maven-App \
   -Dsonar.projectName='Simple Java Maven App' \
   -Dsonar.host.url=http://13.201.33.154:9000 \
